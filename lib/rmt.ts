@@ -1,14 +1,23 @@
-class Remote{
+export default class Remote{
 
 
-    constructor(){
+    constructor(remotePath: string, options: Object){
 
     }
 
-    connect(remotePath: string){
-        return new RemoteBean({});
+    /**
+     *
+     */
+    push(){
+
     }
 
+    /**
+     *
+     */
+    pull(){
+
+    }
 }
 
 class RemoteBean{
@@ -25,7 +34,6 @@ class RemoteBean{
     set name(newName: string){
         this._name = newName;
     }
-
 }
 
 function deserialize(json, instance) {
